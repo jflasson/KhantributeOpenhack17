@@ -3,17 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="48dp"
-    android:background="@color/colorHeader">
+    android:background="@drawable/headerbackground">
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="48dp"
-        android:layout_weight="10"
         android:adjustViewBounds="false"
+        android:cropToPadding="false"
         android:padding="5dp"
-        android:scaleType="centerInside"
-        app:srcCompat="@mipmap/khanlogo" />
+        android:scaleType="center"
+        app:srcCompat="@mipmap/khantribute" />
 
     <TextView
         android:id="@+id/appTitleTextView"
@@ -21,7 +21,6 @@
         android:layout_height="48dp"
         android:layout_weight="60"
         android:gravity="center_vertical"
-        android:text="Khan ProofQuest"
         android:textColor="@color/darkBlue" />
 
     <ImageView
@@ -29,8 +28,8 @@
         android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_weight="10"
-        android:padding="5dp"
         android:adjustViewBounds="true"
         android:cropToPadding="false"
+        android:padding="5dp"
         app:srcCompat="@mipmap/djingis" />
 </LinearLayout>

@@ -16,7 +16,7 @@
             android:layout_width="0dp"
             android:layout_height="26dp"
             android:layout_weight="1"
-            android:background="@drawable/levelgradient"
+            android:background="@drawable/securepointsprogress"
             android:gravity="center_vertical"
             android:paddingLeft="5dp"
             android:text="200 (+200)"
@@ -28,7 +28,7 @@
             android:layout_width="0dp"
             android:layout_height="26dp"
             android:layout_weight="1"
-            android:background="@color/darkBlue"
+            android:background="@drawable/potentialpointsbackground"
             android:gravity="center_vertical"
             android:textSize="10sp" />
 
@@ -37,7 +37,7 @@
             android:layout_width="0dp"
             android:layout_height="26dp"
             android:layout_weight="1"
-            android:background="@color/lightGrey"
+            android:background="@drawable/pointsleftbackground"
             android:gravity="center_vertical" />
 
     </LinearLayout>
