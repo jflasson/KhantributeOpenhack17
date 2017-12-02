@@ -39,7 +39,7 @@ export class HeaderComponent implements OnInit {
   }
 
   signOut() {
-
+    this.isAuthenticated = false;
     this.authService.signOut().then( () => {
       this.router.navigate( ['/login'] );
     });
