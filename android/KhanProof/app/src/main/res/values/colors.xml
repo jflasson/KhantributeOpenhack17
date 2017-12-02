@@ -7,4 +7,8 @@
     <color name="lightBlue">#63d9ea</color>
     <color name="darkBlue">#066ee2</color>
     <color name="lightGrey">#dedede</color>
+    <color name="labelBackground">#5e5e5e</color>
+    <color name="translationsBackground">#f7f7f7</color>
+    <color name="black">#60000000</color>
+
 </resources>
