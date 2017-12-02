@@ -1,9 +1,11 @@
 .header {
     min-height: var(--header-height);
-    background: #8bb535;
+    background: white;
     opacity: 0.8;
     display: flex;
     justify-content: space-between;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    margin-bottom: 4px;
 }
 
 #header-left-items {
@@ -23,7 +25,14 @@
 }
 
 h4 {
-    color: white;
+    color:#0670e1;
+    font-size: 13px;
+	font-weight: bold;
+	letter-spacing: 0.7px;
+}
+
+.btn-secondary {
+    margin: 10px 10px 0 0;
 }
 
 h1 {

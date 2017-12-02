@@ -1,23 +1,73 @@
 .row {
     display: flex;
     justify-content: center;
-    height: calc(100vh - var(--header-height));
+    height: 100vh;
 }
 
-.sign-in-button {
-    margin-top: 10px; 
+.login-title {
+    font-size: 25px;
+	font-weight: bold;
+	letter-spacing: 1.3px;
+	color: #ffffff;
 }
 
 #form-holder {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
+    height: 75%;
+    margin-top: 40px;
 }
 
 form button {
     width: 100%;
+    border-radius: 22.5px;
+    background-image: linear-gradient(to right, #2f5272, #1d3042);
+    height: 45px;
+    font-family: ProximaNovaA;
+	font-size: 12px;
+	letter-spacing: 0.4px;
+	text-align: center;
+	color: #ffffff;
 }
+
+.page-1 {
+	width: 100%;
+	height: 35px;
+	object-fit: contain;
+}
+
+input {
+    border-radius: 22.5px;
+	background-color: rgba(255, 255, 255, 0.5);
+    border: solid 0.8px #ffffff;
+    margin-bottom: 10px;
+    height: 45px;
+}
+
+input::placeholder {
+    height: 16px;
+	font-family: ProximaNovaA;
+	font-size: 12px;
+	letter-spacing: 0.4px;
+	text-align: left;
+    color: #5e5e5e;
+    padding-left: 10px; 
+} 
 
 .google-button {
     width: 100%;
+    border-radius: 22.5px;
+    background-image: linear-gradient(to right, #ffffff, #d8d8d8);
+    height: 45px;
+    margin-top: 30px;
+    font-family: ProximaNovaA;
+	font-size: 10.5px;  
+	letter-spacing: 0.4px;
+	text-align: center;
+	color: #0677df;
+}
+
+#main-body {
+    background-image: linear-gradient(to bottom, #066ee2, #01d1c1);
 }

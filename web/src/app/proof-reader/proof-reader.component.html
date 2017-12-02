@@ -1,3 +1,33 @@
-<p>
-  proof-reader works!
-</p>
+<app-header></app-header>
+<div class="container-fluid">
+  <div class="row">
+      <div class="progress col-12">
+          <div class="progress-bar not-striped" [ngStyle]="{'width': width + '%'}">
+             <p> {{ points }} (+ {{ pending }} unverified points) </p>
+          </div>
+          <div class="progress-bar progress-bar-striped" [ngStyle]="{'width': unverifiedWidth + '%'}">
+          </div>  
+      </div>
+  </div>
+    <div class="row game">
+      <div id="game-holder" class="col-8 col-md-6">  
+          <h4 class="card-title text-center">Is this a good translation?</h4>
+        <div class="card">
+            <div class="card-block text-center">
+              <div class="card-description"> Original </div>
+                <p id="english-text" class="card-text"> {{ textStrings[stringToShow]['english'] }} </p>
+                <div id="swedish-text">
+                    <div class="card-description"> Translation </div>
+                    <p class="card-text"> {{ textStrings[stringToShow]['swedish'] }}</p>
+                </div>
+                
+            </div>
+        </div>
+        <div id="vote-buttons">
+            <img src="../../assets/asset-thumbs-up.svg" (click)="hasVoted('up')">
+            <button type="button" (click)="notSure()" class="unsure"> Skip </button>
+            <img src="../../assets/asset-thumbs-down.svg" (click)="hasVoted('down')"> 
+          </div>
+      </div>
+    </div>
+  </div>
