@@ -34,4 +34,14 @@ export class HeaderComponent implements OnInit {
     });
   }
 
+  signOut() {
+    this.authService.signOut();
+    this.user = null;
+    this.isAuthenticated = false;
+    console.log('AUTH STATE: ');
+    console.log();
+    this.router.navigate( ['/login'] );
+
+  }
+
 }

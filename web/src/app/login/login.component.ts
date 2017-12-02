@@ -12,6 +12,8 @@ export class LoginComponent implements OnInit {
 
   private users: Object[] = [];
   @Output() changeAuthentication: EventEmitter<boolean> = new EventEmitter();
+  private user: any;
+  private isAuthenticated: boolean;
 
   constructor(
     private router: Router,
@@ -24,6 +26,15 @@ export class LoginComponent implements OnInit {
     const user2 = {username: 'root', password: ''};
     this.users.push(user1, user2);
     this.changeAuthentication.emit(false);
+
+    this.authService.authState.subscribe((user) => {
+      this.user = user;
+      this.isAuthenticated = (user != null);
+
+      if (this.isAuthenticated) {
+        this.router.navigate( ['khanproofer']);
+      }
+    });
   }
 
   signInWithGoogle(): void {
