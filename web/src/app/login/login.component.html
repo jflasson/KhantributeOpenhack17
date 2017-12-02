@@ -1,0 +1,15 @@
+<div class="container-fluid">
+  <div class="row">
+    <div id="form-holder" class="col-8 col-md-4">
+      <form class="form-group">
+        <input type="text" class="form-control" #username placeholder="Username">
+        <input type="text" class="form-control" #password placeholder="password">
+        <button type="button" class="btn btn-success sign-in-button" (click)="signIn(username.value, password.value)">Sign in</button>
+      </form>
+      <div class="card-block">
+          <button class="btn btn-danger google-button" (click)="signInWithGoogle()"> <span class="fa fa-google"></span> Sign in with Google </button>
+          <!-- <button class="btn btn-social-icon btn-facebook" (click)="signInWithFB()"> Facebook <span class="fa fa-facebook"></span></button> -->
+      </div>
+    </div>
+  </div>
+</div>

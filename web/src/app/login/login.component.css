@@ -1,0 +1,23 @@
+.row {
+    display: flex;
+    justify-content: center;
+    height: calc(100vh - var(--header-height));
+}
+
+.sign-in-button {
+    margin-top: 10px; 
+}
+
+#form-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form button {
+    width: 100%;
+}
+
+.google-button {
+    width: 100%;
+}

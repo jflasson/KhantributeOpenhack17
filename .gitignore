@@ -8,6 +8,9 @@
 # Java class files
 *.class
 
+# Node modules
+node_modules/
+
 # built native files (uncomment if you build your own)
 # *.o
 # *.so

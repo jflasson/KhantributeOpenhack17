@@ -1,0 +1,17 @@
+.header {
+    min-height: var(--header-height);
+    background: #8bb535;
+    opacity: 0.8;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    border: 1px solid black;
+    display: inline;
+}
+
+div a {
+    text-decoration: underline;
+
+}
