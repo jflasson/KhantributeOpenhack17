@@ -2,35 +2,35 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="48dp"
+    android:background="@color/colorHeader">
 
     <ImageView
         android:id="@+id/logo"
         android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="15"
-        app:srcCompat="@mipmap/ic_launcher" />
-
-    <TextView
-        android:id="@+id/spacer"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="60"
-        android:text="" />
-
-    <TextView
-        android:id="@+id/karma"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
+        android:layout_height="48dp"
         android:layout_weight="10"
-        android:gravity="center"
-        android:text="67"
-        android:textSize="28sp" />
+        android:adjustViewBounds="false"
+        android:padding="5dp"
+        android:scaleType="centerInside"
+        app:srcCompat="@mipmap/khanlogo" />
+
+    <TextView
+        android:id="@+id/appTitleTextView"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_weight="60"
+        android:gravity="center_vertical"
+        android:text="Khan ProofQuest"
+        android:textColor="@color/darkBlue" />
 
     <ImageView
         android:id="@+id/profilepic"
         android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="15"
-        app:srcCompat="@android:drawable/btn_star_big_on" />
+        android:layout_height="48dp"
+        android:layout_weight="10"
+        android:padding="5dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        app:srcCompat="@mipmap/djingis" />
 </LinearLayout>
