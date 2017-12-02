@@ -27,6 +27,7 @@ const appRoutes: Routes = [
   {path: '', redirectTo: 'login', pathMatch: 'full'},
   {path: 'login', component: LoginComponent},
   {path: 'khanproofer', component: ProofReaderComponent},
+  {path: 'profile', component: ProfileComponent},
 //  {path: 'dashboard', component: DashboardComponent},
   {path: '**', component: NotFoundComponent},
 ];

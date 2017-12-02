@@ -1,3 +1,40 @@
-<p>
-  profile works!
-</p>
+<div class="container-fluid">
+  <div class="row profile-row">
+    <div class="col-6 col-md-7">
+      <div class="user">
+        <div class="profile-pic">:)</div>
+        <p class="username">{{loggedInUser.firstName}} {{loggedInUser.lastName}}</p>
+      </div>
+      <div class="well">
+        <p>Reputation: 100</p>
+      </div>
+      <div class="well">
+        <p>Translated: 120</p>
+      </div>
+    </div>
+    <div id="scoreboard-container" class="col-6 col-md-5">
+      <div class="panel-heading">Score board</div>
+      <hr>
+      
+        <!-- Table -->
+        <table class="table highscore-table">
+          <tbody>
+            <tr *ngFor="let user of users; let i = index;">
+              <td>{{i + 1}}</td>
+              <td>{{user.firstName}} {{user.lastName}}</td>
+              <td>{{user.score}}</td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table footer-table">
+          <tfoot>
+            <tr>
+              <td>{{loggedInUser.ranking}}</td>
+              <td>{{loggedInUser.firstName}} {{loggedInUser.lastName}}</td>
+              <td>{{loggedInUser.score}}</td>
+            </tr>
+        </tfoot>
+        </table>
+      </div>
+  </div>
+</div>
