@@ -7,19 +7,19 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="wrap_content"
+        android:layout_width="244dp"
         android:layout_height="48dp"
         android:adjustViewBounds="false"
         android:cropToPadding="false"
         android:padding="5dp"
-        android:scaleType="center"
-        app:srcCompat="@mipmap/khantribute" />
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/khantribute" />
 
     <TextView
         android:id="@+id/appTitleTextView"
         android:layout_width="0dp"
         android:layout_height="48dp"
-        android:layout_weight="60"
+        android:layout_weight="11.87"
         android:gravity="center_vertical"
         android:textColor="@color/darkBlue" />
 
