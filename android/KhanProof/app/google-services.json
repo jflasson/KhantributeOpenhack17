@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "589028174351",
+    "project_id": "firebase-khanproof"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:589028174351:android:3272c38b542b9574",
+        "android_client_info": {
+          "package_name": "com.example.johan.khanproof"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "589028174351-9amhjbnogt5v7upbhc8rls3bj4a1plg5.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "589028174351-j7tajp9ob476f1fbsro3qu71l5hshaj6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.johan.khanproof",
+            "certificate_hash": "1ec48766b33ddfa84cb1d2e42208ea7fb807c59b"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3KOoII1MO9giK6ghrHpQDCUG6uJtT33I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="296dp"
+    android:layout_height="216dp">
+
+    <LinearLayout
+        android:id="@+id/translations"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/translationsbackgroundwithshadow"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/originalLabel"
+                android:layout_width="160dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/labelbackgrond"
+                android:text="Original"
+                android:textAlignment="center"
+                android:textColor="@color/colorHeader" />
+
+            <TextView
+                android:id="@+id/originaltext"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/lorem_ipsum" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/grey_divider" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/translationLabel"
+                android:layout_width="160dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/labelbackgrond"
+                android:text="Translation"
+                android:textAlignment="center"
+                android:textColor="@color/colorHeader" />
+
+            <TextView
+                android:id="@+id/translationtext"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/lorem_ipsum"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

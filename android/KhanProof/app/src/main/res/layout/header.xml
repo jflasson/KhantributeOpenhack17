@@ -2,35 +2,34 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="48dp"
+    android:background="@drawable/headerbackground">
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="15"
-        app:srcCompat="@mipmap/ic_launcher" />
+        android:layout_width="244dp"
+        android:layout_height="48dp"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:padding="5dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/khantribute" />
 
     <TextView
-        android:id="@+id/spacer"
+        android:id="@+id/appTitleTextView"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="60"
-        android:text="" />
-
-    <TextView
-        android:id="@+id/karma"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="10"
-        android:gravity="center"
-        android:text="67"
-        android:textSize="28sp" />
+        android:layout_height="48dp"
+        android:layout_weight="11.87"
+        android:gravity="center_vertical"
+        android:textColor="@color/darkBlue" />
 
     <ImageView
         android:id="@+id/profilepic"
         android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="15"
-        app:srcCompat="@android:drawable/btn_star_big_on" />
+        android:layout_height="48dp"
+        android:layout_weight="10"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:padding="5dp"
+        app:srcCompat="@mipmap/djingis" />
 </LinearLayout>
