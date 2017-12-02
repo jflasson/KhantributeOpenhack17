@@ -1,6 +1,12 @@
 <div class="row">
     <div class="col-md-12 header">
-      <h1> Khan Proof Quest  </h1>
+      <div id="header-left-items">
+          <div id="khan-icon-holder">
+              <img src="../../assets/khan-icon.png" />    
+          </div>    
+          <h4> Khan ProofQuest  </h4>
+      </div>
+
       <div *ngIf="!isAuthenticated">
           <a role="button" href="https://www.khanacademy.org/" class="btn btn-secondary"> Learn more about Khan </a>   
       </div>

@@ -28,10 +28,16 @@ export class LoginComponent implements OnInit {
     this.changeAuthentication.emit(false);
 
     this.authService.authState.subscribe((user) => {
-      this.user = user;
-      this.isAuthenticated = (user != null);
+      if (user) {
+        this.user = user;
+        this.isAuthenticated = (user != null);
+      }
+      else {
+        this.isAuthenticated = false;
+      }
 
       if (this.isAuthenticated) {
+        console.log('Redirect from login');
         this.router.navigate( ['khanproofer']);
       }
     });

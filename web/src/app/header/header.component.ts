@@ -29,18 +29,21 @@ export class HeaderComponent implements OnInit {
     });
 
     this.authService.authState.subscribe((user) => {
-      this.user = user;
-      this.isAuthenticated = (user != null);
+      if (user) {
+        console.log("Found user");
+        this.user = user;
+        this.isAuthenticated = (user != null);
+      }
+
     });
   }
 
   signOut() {
-    this.authService.signOut();
-    this.user = null;
-    this.isAuthenticated = false;
-    console.log('AUTH STATE: ');
-    console.log();
-    this.router.navigate( ['/login'] );
+
+    this.authService.signOut().then( () => {
+      this.router.navigate( ['/login'] );
+    });
+
 
   }
 
