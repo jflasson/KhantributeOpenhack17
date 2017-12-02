@@ -30,7 +30,6 @@ public class KhanLoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if(usernameText.getText().toString().equals("root") &&
                         passwordText.getText().toString().equals("root")) {
-                    Toast.makeText(getApplicationContext(), "Redirecting...",Toast.LENGTH_SHORT).show();
                     toRating();
                 }else{
                     Toast.makeText(getApplicationContext(), "Wrong Credentials",Toast.LENGTH_SHORT).show();
