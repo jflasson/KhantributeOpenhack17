@@ -61,6 +61,7 @@
                 android:textAlignment="center"
                 android:textColor="@color/colorHeader" />
 
+            <!-- OLOF: Replace with katex compatible View -->
             <TextView
                 android:id="@+id/translationtext"
                 android:layout_width="match_parent"
