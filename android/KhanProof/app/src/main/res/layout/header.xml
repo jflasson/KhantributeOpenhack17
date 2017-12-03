@@ -7,17 +7,20 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="244dp"
+        android:layout_width="177dp"
         android:layout_height="48dp"
         android:adjustViewBounds="false"
-        android:cropToPadding="false"
-        android:padding="5dp"
+        android:contentDescription="TODO"
+        android:cropToPadding="true"
+        android:paddingBottom="15dp"
+        android:paddingStart="5dp"
+        android:paddingTop="15dp"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/khantribute" />
+        app:srcCompat="@drawable/khantributelogo" />
 
     <TextView
         android:id="@+id/appTitleTextView"
-        android:layout_width="0dp"
+        android:layout_width="125dp"
         android:layout_height="48dp"
         android:layout_weight="11.87"
         android:gravity="center_vertical"

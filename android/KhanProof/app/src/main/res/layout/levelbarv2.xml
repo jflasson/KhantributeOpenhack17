@@ -15,10 +15,4 @@
         android:progressDrawable="@drawable/levelprogressdrawable"
         android:secondaryProgress="67"></ProgressBar>
 
-    <TextView
-
-        android:text="Test"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
 </LinearLayout>

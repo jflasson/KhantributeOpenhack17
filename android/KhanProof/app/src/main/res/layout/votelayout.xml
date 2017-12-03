@@ -5,7 +5,7 @@
     android:layout_height="60dp">
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/goodbutton"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_weight="1"
@@ -15,15 +15,16 @@
         app:srcCompat="@mipmap/thumbup" />
 
     <ImageButton
-        android:id="@+id/imageButton5"
+        android:id="@+id/dontknowbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:layout_gravity="center"
         android:background="@android:color/background_light"
         app:srcCompat="@mipmap/skip" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/badbutton"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_weight="1"

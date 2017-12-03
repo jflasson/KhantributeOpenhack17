@@ -24,7 +24,7 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:background="@drawable/labelbackgrond"
-                android:text="Original"
+                android:text="@string/originallabel"
                 android:textAlignment="center"
                 android:textColor="@color/colorHeader" />
 
@@ -57,7 +57,7 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:background="@drawable/labelbackgrond"
-                android:text="Translation"
+                android:text="@string/translationlabel"
                 android:textAlignment="center"
                 android:textColor="@color/colorHeader" />
 
