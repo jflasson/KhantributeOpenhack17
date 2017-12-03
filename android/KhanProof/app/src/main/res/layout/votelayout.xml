@@ -18,9 +18,10 @@
         android:id="@+id/dontknowbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
         android:layout_gravity="center"
+        android:layout_weight="1"
         android:background="@android:color/background_light"
+        android:onClick="onClickMaybe"
         app:srcCompat="@mipmap/skip" />
 
     <ImageButton

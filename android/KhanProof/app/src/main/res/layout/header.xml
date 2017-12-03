@@ -28,9 +28,8 @@
 
     <ImageView
         android:id="@+id/profilepic"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="48dp"
-        android:layout_weight="10"
         android:adjustViewBounds="true"
         android:cropToPadding="false"
         android:padding="5dp"

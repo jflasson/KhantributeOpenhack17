@@ -16,22 +16,23 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.ArrayList;
 
 public class RatingActivity extends AppCompatActivity {
-
+    int paircounter;
+    int securepoints;
+    int potentialpoints;
     TextView originalText;
     TextView translationText;
-    Button goodButton;
-    Button maybeButton;
-    Button badButton;
-    LinearLayout levelprogressbar;
-    int securePoints;
-    int potentialPoints;
-    int leftPoints;
+    TextView scoreTextView;
     static int minprogress;
     static int maxprogress;
     static ProgressBar levelProgressBar;
+    //Change this to change server address
     final String getStringsUrl = "http://node-express-env.ft838mhenj.eu-west-1.elasticbeanstalk.com/texts/string";
+
+    ArrayList<StringPair> samplePairs;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,9 +42,36 @@ public class RatingActivity extends AppCompatActivity {
         originalText = findViewById(R.id.originaltext);
         translationText = findViewById(R.id.translationtext);
         levelProgressBar = findViewById(R.id.levelProgressBar);
-        levelProgressBar.setProgress(43);
-        levelProgressBar.setSecondaryProgress(43+15);
-        fetchStrings();
+        scoreTextView = findViewById(R.id.scoreTextView);
+        securepoints = 43;
+        potentialpoints = 5;
+        updateLevelBar();
+        samplePairs = new ArrayList<>();
+        samplePairs.add(new StringPair("My hovercraft is full of eels!", "Min svävare är full med ålar!"));
+        samplePairs.add(new StringPair("The gravitational pull on an object is proportional to its mass.", "Den gravitationskraft som verkar på ett föremål är direkt proportionerlig till föremålets massa."));
+        samplePairs.add(new StringPair("I will not buy this record, it is scratched.", "Jag önskar köpa cigaretter."));
+        samplePairs.add(new StringPair("Your mother was a hamster and your father smelled of elderberries.", "God afton min herre."));
+        samplePairs.add(new StringPair("The derivative of a function represents its rate of change", "Funktionens derivata representerar dess förändringshastighet."));
+        paircounter = 0;
+        getSampleStrings();
+//      Uncomment below to use server instead of sample data
+//      fetchStrings();
+
+    }
+
+    public void updateLevelBar() {
+        scoreTextView.setText(securepoints + "(" + potentialpoints + ")");
+        levelProgressBar.setProgress(securepoints);
+        levelProgressBar.setSecondaryProgress(securepoints + potentialpoints);
+    }
+
+    public void getSampleStrings(){
+        paircounter++;
+        if(paircounter > 4) {
+            paircounter = 0;
+        }
+        originalText.setText(samplePairs.get(paircounter).original);
+        translationText.setText(samplePairs.get(paircounter).translation);
     }
 
     public void fetchStrings(){
@@ -73,18 +101,21 @@ public class RatingActivity extends AppCompatActivity {
     }
 
     public void onClickGood(View view){
-        fetchStrings();
-        toast("Good pressed");
+        getSampleStrings();
+        potentialpoints += 3;
+        updateLevelBar();
     }
 
     public void onClickMaybe(View view){
-        fetchStrings();
-        toast("Maybe pressed");
+        getSampleStrings();
+        potentialpoints += 1;
+        updateLevelBar();
     }
 
     public void onClickBad(View view){
-        fetchStrings();
-        toast("Bad pressed");
+        getSampleStrings();
+        potentialpoints += 3;
+        updateLevelBar();
     }
 
     public void toast(String message){

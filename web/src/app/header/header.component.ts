@@ -26,11 +26,12 @@ export class HeaderComponent implements OnInit {
         else {
           this.isAuthenticated = true;
         }
-        console.log('PROFILE? ', this.isProfilePage);
+
         event.url === '/profile' ? this.isProfilePage = true : this.isProfilePage = false;
         console.log('PROFILE? ', this.isProfilePage);
-        
+        console.log('Is authenticated: ' + this.isAuthenticated);
         console.log('Navigation end: ' + event.url);
+        
       }
     });
 
@@ -44,8 +45,11 @@ export class HeaderComponent implements OnInit {
     });
   }
 
+ goToApp() {
+   this.router.navigate( ['/khanproofer'] );
+ }
 
-  seeProfile(){
+  seeProfile() {
     this.router.navigate(['/profile']);
   }
   

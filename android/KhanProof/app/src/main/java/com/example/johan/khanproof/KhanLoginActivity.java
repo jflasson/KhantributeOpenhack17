@@ -29,7 +29,7 @@ public class KhanLoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(usernameText.getText().toString().equals("root") &&
-                        passwordText.getText().toString().equals("root")) {
+                        passwordText.getText().toString().equals("")) {
                     toRating();
                 }else{
                     Toast.makeText(getApplicationContext(), "Wrong Credentials",Toast.LENGTH_SHORT).show();
