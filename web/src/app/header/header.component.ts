@@ -38,6 +38,11 @@ export class HeaderComponent implements OnInit {
     });
   }
 
+
+  seeProfile(){
+    this.router.navigate(['/profile']);
+  }
+  
   signOut() {
     this.isAuthenticated = false;
     this.authService.signOut().then( () => {

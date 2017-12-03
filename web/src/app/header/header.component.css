@@ -44,3 +44,11 @@ div a {
     text-decoration: underline;
 
 }
+
+.user-icon{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-color: blue;
+    color: white;
+}
