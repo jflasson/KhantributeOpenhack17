@@ -1,0 +1,97 @@
+.row.game {
+    display: flex;
+    justify-content: center;
+}
+
+#game-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.progress {
+    height: 40px;
+    padding: 0;
+}
+
+.progress-bar.not-striped {
+    background: linear-gradient(to right, #63d9ea, #066ee2);
+}
+
+.progress-bar.not-striped>p {
+    margin-bottom: 0;
+}
+
+.progress-bar-striped {
+    background-color: #066ee2;
+    border-left: 1px dotted white;
+}
+
+.card-title {
+    height: 18px;
+    font-family: 'Proxima Nova', Georgia, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+    text-align: center;
+    color: #5e5e5e;
+
+}
+
+.card-description {
+    border-radius: 8px;
+    background-color: #5e5e5e;
+    color: white;
+    width: 100px;
+}
+
+
+.card-block {
+    background: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
+}
+
+.card-block div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-text {
+    padding: 30px;
+    font-family: 'Proxima Nova', Georgia, sans-serif;
+	font-size: 19px;
+	letter-spacing: 0.7px;
+	text-align: center;
+	color: #737373;
+}
+
+#vote-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#swedish-text {
+    border-top: 1px solid lightgray;
+}
+
+.unsure {
+	width: 40px;
+	height: 40px;
+	background-image: linear-gradient(to top, #b5ab59, #e6c82b);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 30px;
+	font-family: 'Proxima Nova', Georgia, sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 0.4px;
+	text-align: center;
+	color: #ffffff;
+
+}

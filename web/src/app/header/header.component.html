@@ -1,3 +1,4 @@
+<div class="container-fluid">
 <div class="row">
     <div class="col-md-12 header">
       <div id="header-left-items">
@@ -6,12 +7,12 @@
           </div>    
           <h4> Khan ProofQuest  </h4>
       </div>
-
-      <div *ngIf="!isAuthenticated">
-          <a role="button" href="https://www.khanacademy.org/" class="btn btn-secondary"> Learn more about Khan </a>   
+      <div class="header-right-items" *ngIf="isAuthenticated && !isProfilePage">
+        <div class="profile-pic" (click)="seeProfile()" ><img src="" alt=""></div>
       </div>
-      <div *ngIf="isAuthenticated">
-        <button type="button" (click)="signOut()" class="btn btn-secondary"> Sign out </button>
+      <div class="header-right-items" *ngIf="isAuthenticated && isProfilePage">
+        <button id="sign-out-button" type="button" (click)="signOut()" class="btn btn-secondary"> Sign out </button>
       </div>
     </div>   
   </div>
+</div>

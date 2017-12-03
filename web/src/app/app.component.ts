@@ -1,7 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy, AfterViewInit } from '@angular/core';
 import {Router, ActivatedRoute, Params} from '@angular/router';
 import { Subscription } from 'rxjs/Subscription';
-import { OnDestroy, AfterViewInit } from '@angular/core/src/metadata/lifecycle_hooks';
 
 @Component({
   selector: 'app-root',

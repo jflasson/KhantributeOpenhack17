@@ -1,3 +1,50 @@
-<p>
-  profile works!
-</p>
+<app-header></app-header>
+<div class="container-fluid">
+  <div class="row profile-row">
+    <div id="profile-info" class="col-12 col-md-7">
+      <div class="user">
+        <div class="profile-pic"><img src="{{loggedInUser.photoUrl}}" alt=""></div>
+        <p class="username">{{loggedInUser.firstName}} {{loggedInUser.lastName}}</p>
+      </div>
+      <div class="progress-info">
+        <div class="progress">
+          <div class="progress-bar not-striped" [ngStyle]="{'width': width + '%'}"></div>
+          <div class="progress-bar progress-bar-striped" [ngStyle]="{'width': unverifiedWidth + '%'}"></div>  
+        </div>
+        <p class="cred-points"> <span>{{ points }}</span> Credibility points</p>
+        <p class="pending-points"><span>{{ pending }}</span> points pending approval</p>
+      </div>
+      <hr>
+      <div class="texts-translated">
+        <p>Total Texts translated: <span>1002</span></p>
+        <p>Texts translated this week: <span>14</span></p>
+        <p>Texts translated this month: <span>345</span></p>
+      </div>
+      <hr>
+    </div>
+    <div id="scoreboard-container" class="col-12 col-md-5">
+      <div class="panel-heading">Score board</div>
+      <hr>
+      
+        <!-- Table -->
+        <table class="table highscore-table">
+          <tbody>
+            <tr *ngFor="let user of users; let i = index;">
+              <td>{{i + 1}}</td>
+              <td>{{user.firstName}} {{user.lastName}}</td>
+              <td>{{user.score}}</td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table footer-table">
+          <tfoot>
+            <tr>
+              <td>{{userScore.ranking}}</td>
+              <td>{{loggedInUser.firstName}} {{loggedInUser.lastName}}</td>
+              <td>{{userScore.score}}</td>
+            </tr>
+        </tfoot>
+        </table>
+      </div>
+  </div>
+</div>

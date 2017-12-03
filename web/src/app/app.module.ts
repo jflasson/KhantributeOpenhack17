@@ -10,6 +10,7 @@ import { ProofReaderComponent } from './proof-reader/proof-reader.component';
 import { HeaderComponent } from './header/header.component';
  import { SocialLoginModule, AuthServiceConfig } from 'angular4-social-login';
  import { GoogleLoginProvider } from 'angular4-social-login';
+import { HttpClientModule } from '@angular/common/http';
 
 const config = new AuthServiceConfig([
   {
@@ -26,6 +27,7 @@ const appRoutes: Routes = [
   {path: '', redirectTo: 'login', pathMatch: 'full'},
   {path: 'login', component: LoginComponent},
   {path: 'khanproofer', component: ProofReaderComponent},
+  {path: 'profile', component: ProfileComponent},
 //  {path: 'dashboard', component: DashboardComponent},
   {path: '**', component: NotFoundComponent},
 ];
@@ -46,6 +48,7 @@ export function provideConfig() {
 ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: true } // <-- debugging purposes only

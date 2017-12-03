@@ -6,5 +6,12 @@
     <color name="colorAccent">#066ee2</color>
     <color name="lightBlue">#63d9ea</color>
     <color name="darkBlue">#066ee2</color>
+    <color name="fadeddarkBlue">#80066ee2</color>
     <color name="lightGrey">#dedede</color>
+    <color name="labelBackground">#5e5e5e</color>
+    <color name="translationsBackgroundStart">#ffffff</color>
+    <color name="translationsBackgroundEnd">#d8d8d8</color>
+    <color name="fadedblack">#60000000</color>
+    <color name="dontknowyellow">#e6c82b</color>
+
 </resources>
