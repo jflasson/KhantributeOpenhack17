@@ -1,21 +1,18 @@
 var express = require('express');
 var crowdin = require('crowdin');
 var router = express.Router();
+var texts = require('../texts/test.json');
 
+//TODO: Get data files from Crowdin
 crowdin = new crowdin({
-	apiKey: 'dc6ab0c635bf043c03db12aa5f02abc7',
-	endpointUrl: 'https://api.crowdin.net/api/project/tomastest'
+	apiKey: '<your API-key>',
+	endpointUrl: 'https://api.crowdin.net/api/project/<Your projectname>'
 });
 
 router.get('/string', function(req, res, next) {
-	const dummyData = {
-		fileName: 'other.po',
-		original: 'This is an example sentence.',
-		sv_SE: 'Det här är en exempel mening.'
-	};
 	res.setHeader("Content-Type",'application/json');
 	res.setHeader('Access-Control-Allow-Origin', '*');
-	res.send(dummyData);
+	res.send(texts[Math.floor(Math.random() * 100) + 50]);
 });
 
 router.post('/string', function(req, res, next) {

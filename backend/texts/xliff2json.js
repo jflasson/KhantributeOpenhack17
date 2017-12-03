@@ -7,9 +7,16 @@ xliff12ToJs(input, (err, res) => {
 	if(err) {
 		return console.log(err);
 	}
-	fs.writeFile("test.json", JSON.stringify(res));
-	console.log("JSON: " + res);
-	map(res, (err, result) => {
-
+	// console.log("JSON: " + res);
+	let strings = res['resources']['/2_high_priority_content/learn.math.arithmetic-home.exercises.pot'];
+	console.log("new JSON: " + strings);
+	let newres = Object.keys(strings).map(function(key, index) {
+		return {
+			'key': key,
+			source: strings[key].source,
+			target: strings[key].target
+		}
 	});
+	// console.log("new JSON: " + JSON.stringify(newres));
+	fs.writeFile("test.json", JSON.stringify(newres));
 });
