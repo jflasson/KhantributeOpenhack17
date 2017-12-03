@@ -24,11 +24,12 @@ form button {
     border-radius: 22.5px;
     background-image: linear-gradient(to right, #2f5272, #1d3042);
     height: 45px;
-    font-family: ProximaNovaA;
-	font-size: 12px;
+    font-family: 'Proxima Nova', Georgia, sans-serif;
+	font-size: 10.5px;
 	letter-spacing: 0.4px;
 	text-align: center;
-	color: #ffffff;
+    color: #ffffff;
+    text-transform: uppercase;
 }
 
 .page-1 {
@@ -43,16 +44,20 @@ input {
     border: solid 0.8px #ffffff;
     margin-bottom: 10px;
     height: 45px;
+    font-family: 'Proxima Nova', Georgia, sans-serif;
+	font-size: 10.5px;
+	letter-spacing: 0.4px;
+	text-align: left;
+    color: #5e5e5e;
 }
 
 input::placeholder {
     height: 16px;
-	font-family: ProximaNovaA;
-	font-size: 12px;
+	font-family: 'Proxima Nova', Georgia, sans-serif;
+	font-size: 10.5px;
 	letter-spacing: 0.4px;
 	text-align: left;
     color: #5e5e5e;
-    padding-left: 10px; 
 } 
 
 .google-button {
@@ -61,11 +66,12 @@ input::placeholder {
     background-image: linear-gradient(to right, #ffffff, #d8d8d8);
     height: 45px;
     margin-top: 30px;
-    font-family: ProximaNovaA;
+    font-family: 'Proxima Nova', Georgia, sans-serif;
 	font-size: 10.5px;  
 	letter-spacing: 0.4px;
 	text-align: center;
-	color: #0677df;
+    color: #0677df;
+    text-transform: uppercase;
 }
 
 #main-body {
