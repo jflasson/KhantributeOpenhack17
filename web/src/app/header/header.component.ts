@@ -10,6 +10,8 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
   private isAuthenticated: boolean;
   private user: any;
+  private isProfilePage: boolean;
+
   constructor(
     private router: Router,
     private route: ActivatedRoute,
@@ -24,6 +26,10 @@ export class HeaderComponent implements OnInit {
         else {
           this.isAuthenticated = true;
         }
+        console.log('PROFILE? ', this.isProfilePage);
+        event.url === '/profile' ? this.isProfilePage = true : this.isProfilePage = false;
+        console.log('PROFILE? ', this.isProfilePage);
+        
         console.log('Navigation end: ' + event.url);
       }
     });

@@ -13,6 +13,11 @@
     align-items: center;
 }
 
+.header-right-items {
+    display: flex;
+    align-items: center;
+}
+
 #khan-icon-holder {
     width: 50px;
     height: 50px;
@@ -31,18 +36,9 @@ h4 {
 	letter-spacing: 0.7px;
 }
 
-.btn-secondary {
-    margin: 10px 10px 0 0;
-}
-
 h1 {
     border: 1px solid black;
     display: inline;
-}
-
-div a {
-    text-decoration: underline;
-
 }
 
 .user-icon{
@@ -51,4 +47,19 @@ div a {
     border-radius: 100%;
     background-color: blue;
     color: white;
+}
+
+.profile-pic {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    background-color: #066ee2;
+    color: white;
+    margin-right: 10px;
+}
+
+.profile-pic>img{
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
 }

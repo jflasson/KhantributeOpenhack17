@@ -7,19 +7,93 @@
 .user{
     display: flex;
     align-items: center;
+    margin-bottom: 25px;
 }
 
 .profile-pic {
-    height: 40px;
-    width: 40px;
+    height: 58px;
+    width: 58px;
     border-radius: 100%;
-    background-color: green;
+    background-color: #066ee2;
     color: white;
     margin-right: 10px;
 }
 
+.profile-pic>img{
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+}
+
 .username{
     margin-bottom: 0;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+    text-align: left;
+    color: #5e5e5e;
+}
+
+.progress {
+    height: 26px;
+    padding: 0;
+}
+
+.progress-bar.not-striped {
+    background: linear-gradient(to right, #63d9ea, #066ee2);
+}
+
+.progress-bar.not-striped>p {
+    margin-bottom: 0;
+}
+
+.progress-bar-striped {
+    background-color: #066ee2;
+    border-left: 1px dotted white;
+}
+
+.cred-points{
+    margin-top: 5px;
+    margin-bottom: -5px;
+    color: #5e5e5e;
+    color: var(--textcolor);
+    font-weight: bold;
+    font-size: 16;
+    letter-spacing: 0.7;
+}
+
+.cred-points>span{
+    color: #066ee2;
+    color: var(--cerulean-blue);
+    font-size: 23px;
+    letter-spacing: 0.7;
+}
+
+.pending-points{
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: #5e5e5e;
+    color: var(--textcolor);
+}
+
+.pending-points>span{
+    color: #066ee2;
+    color: var(--cerulean-blue);
+}
+
+.texts-translated>p{
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #5e5e5e;
+    color: var(--textcolor);
+}
+
+.texts-translated>p>span{
+    color: #066ee2;
+    color: var(--cerulean-blue);
 }
 
 #scoreboard-container{
@@ -29,32 +103,46 @@
     align-items: center;
 }
 
+#scoreboard-container, #profile-info{
+    padding-top: 45px;
+    padding-left: 5%;
+    padding-right: 5%;
+    
+}
+
 .panel-heading{
-    /* font-family: ProximaNovaA; */
+    font-family: 'Proxima Nova', Georgia, sans-serif;
     font-size: 16px;
     font-weight: bold;
     letter-spacing: 0.7px;
     text-align: left;
     color: #ffffff;
-    margin-top: 50px;
-    width: 70%;
+    width: 85%;
 }
 
-hr{
+#profile-info hr{
+    border: 1px solid var(--cerulean-blue);
+    width: 100%;
+    background-color: var(--cerulean-blue);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#scoreboard-container hr{
     border: 1px solid white;
-    width: 80%;
+    width: 100%;
     background-color: white;
     margin-top: 10px;
     margin-bottom: 5px;
 }
 
 table{
-    width: 70%;
+    width: 85%;
 }
 
 table>tbody>tr, table>tfoot>tr{
     border-color: white;
-    /* font-family: ProximaNovaA; */
+    font-family: 'Proxima Nova', Georgia, sans-serif;
     font-size: 13px;
     font-weight: bold;
     letter-spacing: 0.5px;

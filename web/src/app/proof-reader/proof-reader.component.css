@@ -12,6 +12,7 @@
 
 .progress {
     height: 40px;
+    padding: 0;
 }
 
 .progress-bar.not-striped {
@@ -62,7 +63,7 @@
 
 .card-text {
     padding: 30px;
-    font-family: Calibri;
+    font-family: 'Proxima Nova', Georgia, sans-serif;
 	font-size: 19px;
 	letter-spacing: 0.7px;
 	text-align: center;
@@ -85,7 +86,7 @@
 	background-image: linear-gradient(to top, #b5ab59, #e6c82b);
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
     border-radius: 30px;
-	font-family: ProximaNovaA;
+	font-family: 'Proxima Nova', Georgia, sans-serif;
     font-size: 10px;
     text-transform: uppercase;
 	font-weight: bold;

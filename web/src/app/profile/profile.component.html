@@ -1,18 +1,28 @@
+<app-header></app-header>
 <div class="container-fluid">
   <div class="row profile-row">
-    <div class="col-6 col-md-7">
+    <div id="profile-info" class="col-12 col-md-7">
       <div class="user">
-        <div class="profile-pic">:)</div>
+        <div class="profile-pic"><img src="{{loggedInUser.photoUrl}}" alt=""></div>
         <p class="username">{{loggedInUser.firstName}} {{loggedInUser.lastName}}</p>
       </div>
-      <div class="well">
-        <p>Reputation: 100</p>
+      <div class="progress-info">
+        <div class="progress">
+          <div class="progress-bar not-striped" [ngStyle]="{'width': width + '%'}"></div>
+          <div class="progress-bar progress-bar-striped" [ngStyle]="{'width': unverifiedWidth + '%'}"></div>  
+        </div>
+        <p class="cred-points"> <span>{{ points }}</span> Credibility points</p>
+        <p class="pending-points"><span>{{ pending }}</span> points pending approval</p>
       </div>
-      <div class="well">
-        <p>Translated: 120</p>
+      <hr>
+      <div class="texts-translated">
+        <p>Total Texts translated: <span>1002</span></p>
+        <p>Texts translated this week: <span>14</span></p>
+        <p>Texts translated this month: <span>345</span></p>
       </div>
+      <hr>
     </div>
-    <div id="scoreboard-container" class="col-6 col-md-5">
+    <div id="scoreboard-container" class="col-12 col-md-5">
       <div class="panel-heading">Score board</div>
       <hr>
       
@@ -29,9 +39,9 @@
         <table class="table footer-table">
           <tfoot>
             <tr>
-              <td>{{loggedInUser.ranking}}</td>
+              <td>{{userScore.ranking}}</td>
               <td>{{loggedInUser.firstName}} {{loggedInUser.lastName}}</td>
-              <td>{{loggedInUser.score}}</td>
+              <td>{{userScore.score}}</td>
             </tr>
         </tfoot>
         </table>
